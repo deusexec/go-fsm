@@ -1,6 +1,6 @@
-# Finite State Machine
+# Finite State Machine Builder
 
-FSM (DFA).
+FSM (DFA) builder.
 
 ## Install
 
