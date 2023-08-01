@@ -60,9 +60,10 @@ func main() {
         fsm.WithInitial(LOCKED),
     )
 
-    // Binerator would randomly emit a value from the provided alphabet
-    // for every 100 milliseconds,
-    // until timeout complete (after 1 second).
+    // Create random sequence emitter.
+    // Events: {COIN, PUSH}.
+    // Delay: 100 milliseconds between events.
+    // Timeout: 1 second, until emitter done.
     bin := binerator.New(
         binerator.WithAlphabet(COIN, PUSH),
         binerator.WithDelay(100*time.Millisecond),
@@ -71,7 +72,7 @@ func main() {
 
     tableHeader()
 
-    // Read value from the emitter and pass it to the FSM
+    // Read emitted value and pass it to the FSM
     for input := range bin.Emitter() {
         fsm.Run(fmt.Sprintf("%v", input), onProcess)
     }
