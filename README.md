@@ -1,6 +1,6 @@
 # Finite State Machine
 
-FSM (DFA) builder written in Go.
+FSM (DFA).
 
 ## Install
 
