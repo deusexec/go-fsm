@@ -98,7 +98,11 @@ func (fsm *FiniteStateMachine) Run(input string, onProcess func(base string, inp
 	if fsm.IsDone() {
 		return
 	}
-	nextState := fsm.transitions[fsm.activeState.name][input]
+	currentState := fsm.transitions[fsm.activeState.name]
+	nextState, ok := currentState[input]
+	if !ok {
+		return
+	}
 	onProcess(fsm.activeState.name, input, nextState)
 	fsm.activeState = fsm.states[nextState]
 }

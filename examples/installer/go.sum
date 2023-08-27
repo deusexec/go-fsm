@@ -1,0 +1,4 @@
+github.com/deusexec/go-binerator v0.0.0-20230729200210-a1fb8e4f9bb9 h1:1uOKOclNk/mRgETK2wPFbLBDPZQpGaOY4fgmMGjE38U=
+github.com/deusexec/go-binerator v0.0.0-20230729200210-a1fb8e4f9bb9/go.mod h1:fxQhzJ636CpEqLBB/z/+315J/zUIg1FKAEbsm02iQvQ=
+github.com/deusexec/go-fsm v0.0.0-20230801070140-dd1e0c510b7b h1:2Ne5gJhjLdMGpofBPVXkdSg08bdy3j5/A3XcRIZHvcI=
+github.com/deusexec/go-fsm v0.0.0-20230801070140-dd1e0c510b7b/go.mod h1:SM7kZjKlrTUHV+dMTplS/qhPFu8G5wSNkpnihqOJMJk=
